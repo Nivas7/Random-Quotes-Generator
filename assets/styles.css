@@ -1,0 +1,139 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    background-image: url('./img/pexels-henda-watani-320014.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -2;
+  }
+  
+  #display {
+      color: white;
+      font-size: 2.9em;
+      top: 10px;
+    border-bottom: thin solid;
+    padding-bottom: 20px;
+    opacity: 0.80;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+  }
+  
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+  }
+  
+
+  
+  #content {
+    height: 45em;
+  } p {
+    max-width: 30em;
+    color: white;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    letter-spacing:0.1em;
+    text-align:center;
+    margin: 40px auto;
+    text-transform: lowercase;
+    line-height: 145%;
+    font-size: 2em;
+    font-variant: small-caps;
+    
+  }
+
+  
+
+  #quote{
+    font-family:"Abril Fatface", sans-serif;
+    background: linear-gradient(to right, crimson,pink,springgreen);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    font-size: 1.5rem;
+    width:80vw;
+    margin:30vh auto;
+    display:block;
+    text-align:center;
+    transition: color .2s ease-in-out;
+    text-transform:uppercase;
+    font-weight:900;
+  }
+  #quote:hover{
+    color:rgba(0,0,0,0);
+  }
+  @keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+  }
+  
+
+  #b-nav {
+    padding-bottom: 5em;
+    position: fixed;
+    width: 100%;
+    bottom: 2em;
+  }
+  
+  #b-nav ul {
+    margin: 0;
+    padding: 0.5em;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+
+  
+  #gen {
+    outline: none;
+    padding-top: 5px;
+    text-decoration: none;
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+    border: 2.5px solid crimson;
+    height: 40px;
+    width: 100px;
+    margin-left: 40%;
+    border-radius: 2px;
+    transition: 0.5s;
+    padding-bottom: 5px;
+    font-family:"Abril Fatface", sans-serif;
+    background: linear-gradient(to right, crimson,pink,springgreen);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    display:block;
+    text-align:center;
+    transition: color .2s ease-in-out;
+    text-transform:uppercase;
+    font-weight: bolder;
+  }
+  
+  #gen:hover {
+    color:rgba(0,0,0,0);
+  }
+  
+  
+  
+  @media screen 
+   and (max-device-width: 800px) 
+    and (max-device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) {
+      p {
+        font-size: 1em;
+      }
+}
+  
